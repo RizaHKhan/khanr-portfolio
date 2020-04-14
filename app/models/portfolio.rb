@@ -1,5 +1,9 @@
 class Portfolio < ApplicationRecord
   has_many :technologies
+  # Lamda means to
+  # |attr| can be anything
+  accepts_nested_attributes_for :technologies,
+                                reject_if: lambda { |attrs| attrs['name'].blank? }
   includes Placeholder
   validates_presence_of :title, :body, :main_image, :thumbnail_image
 
