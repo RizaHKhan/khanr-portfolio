@@ -22,4 +22,9 @@ Create the databse
 
 **Never change the `schema.rb` file**
 
+### Generators
 
+`rails g controller Pages home about contact`
+Here, we have added controllers and views for the three pages specied above. The information stored in these pages will not be stored in a database and is used primarily for showing static information.
+
+You will also notice rails did not create CRUD endpoints for these pages.
