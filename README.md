@@ -85,3 +85,6 @@ Adding/Removing or Changing attributes from a database table:
 ## Updating Schema Tables
 
 ## Data Relationships
+
+Create a relationship with something like this:
+`rails g migration add_topic_reference_to_blogs topic:references`

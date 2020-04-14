@@ -4,6 +4,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def vue
+    @vue_items = Portfolio.vue
+  end
+
   # The new method refers to creating a new portfolio
   def new
     @portfolio_item = Portfolio.new
