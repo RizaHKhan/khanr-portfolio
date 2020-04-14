@@ -15,7 +15,7 @@
   <p><%= new_portfolio_url  %></p>
 
   <% @portfolio_items.each do |i| %>
-  <h1><%= link_to i.title, portfolio_path(i) %></h1>
+  <h1><%= link_to i.title, portfolio_show_path(i) %></h1>
   <%= image_tag i.thumbnail_image unless i.thumbnail_image.nil?%>
   <em><%= i.subtitle %></em>
   <p><%= i.body %></p>
