@@ -1,4 +1,5 @@
 class Portfolio < ApplicationRecord
+  includes Placeholder
   validates_presence_of :title, :body, :main_image, :thumbnail_image
 
   # Self is a keyword here, Method 1
@@ -13,7 +14,7 @@ class Portfolio < ApplicationRecord
 
   def set_defaults
     # The double pipes say, if the user loads an image, do not override, otherwise override with these:
-    self.main_image ||= 'https://place-hold.it/550'
-    self.thumbnail_image ||= 'https://place-hold.it/100'
+    self.main_image ||= Placeholder.image_generator(width: '550')
+    self.thumbnail_image ||= Placeholder.image_generator(width: '100')
   end
 end
