@@ -77,3 +77,6 @@ Adding/Removing or Changing attributes from a database table:
 
 1. The `add_` is unique and rails looks for these words
 2. The `_blogs` refers to the schema table
+
+## Updating Schema Tables
+
