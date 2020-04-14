@@ -10,7 +10,8 @@ The `-T` removes the test environment
 ### Database Setup
 Ruby will read the name of the system (in my case `khanr`). If you want something different, specify the `username` and `password` in the `database.yml` file.
 
-Create the database user if none already exist: `sudo -u postgres createdb USERNAME`
+Create the database user if none already exists: `sudo -u postgres createdb USERNAME`
 
 Create the databse
 `rails db:create`
+`rails db:migrate`
