@@ -22,9 +22,27 @@ Create the databse
 
 **Never change the `schema.rb` file**
 
-### Generators
+### Rails Console
+`rails c` allows you to access the database in the terminal
 
+Example:
+`Skill.create!(title: 'Ruby On Rails', percent_utilized: 50)`
+
+Creates a new Skill directly in the database.
+
+## Generators
+
+### Controller
 `rails g controller Pages home about contact`
 Here, we have added controllers and views for the three pages specied above. The information stored in these pages will not be stored in a database and is used primarily for showing static information.
 
 You will also notice rails did not create CRUD endpoints for these pages.
+
+### Model
+`rails g model Skill title:string percent_utilized:integer`
+
+1. Creates a model file
+2. No view files
+3. A migration file with new table
+
+Don't forget to `rails db:migrate` to implement the new changes into the schema file.
