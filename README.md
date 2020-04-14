@@ -16,6 +16,10 @@ Create the databse
     `rails db:create`
     `rails db:migrate`
 
+### Routes
+`rake routes` To see all routes
+`rake routes | grep NAME` To see specific routes
+
 ### Scaffolding
 `rails g scaffold Blog title:string body:text`
 `rails db:migrate`
