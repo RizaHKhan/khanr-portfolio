@@ -24,6 +24,10 @@ Starting the database server
 `rake routes` To see all routes
 `rake routes | grep NAME` To see specific routes
 
+#### Routing Engine
+
+The heart and sole of Rails.
+
 ### Scaffolding
 `rails g scaffold Blog title:string body:text`
 `rails db:migrate`
