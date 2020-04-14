@@ -15,3 +15,11 @@ Create the database user if none already exists: `sudo -u postgres createdb USER
 Create the databse
 `rails db:create`
 `rails db:migrate`
+
+### Scaffolding
+`rails g scaffold Blog title:string body:text`
+`rails db:migrate`
+
+**Never change the `schema.rb` file**
+
+
