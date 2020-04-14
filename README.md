@@ -16,6 +16,10 @@ Create the databse
     `rails db:create`
     `rails db:migrate`
 
+
+Starting the database server
+`sudo service postgresql start`
+
 ### Routes
 `rake routes` To see all routes
 `rake routes | grep NAME` To see specific routes
