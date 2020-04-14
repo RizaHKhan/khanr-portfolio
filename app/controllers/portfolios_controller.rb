@@ -44,4 +44,16 @@ class PortfoliosController < ApplicationController
     end
   end
 
+  # There is a reason for destory vs delete. The destroy method calls callbacks. It is more specific and thorough
+  # Does not require its own view template
+  def destroy
+
+    @portfolio_item = Portfolio.find(params[:id])
+
+    @portfolio_item.destroy
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: 'Blog was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
 end
