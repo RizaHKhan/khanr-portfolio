@@ -54,3 +54,8 @@ Creates a model and controller but no views
 
 Think of them as _very skinny scaffolds_.
 
+## Seed File
+**Only run this in development**. It ereases the database.
+`rails db:setup`
+
+The seed file utilizes pure Ruby and some Rails syntax to add fake data to the database.
