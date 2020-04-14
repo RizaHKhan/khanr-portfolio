@@ -1,9 +1,8 @@
 <h1>Portfolio Archive</h1>
-
-<% @portfolio_items.each do |i| %>
-<h1><%= i.title %></h1>
-<%= image_tag i.thumbnail_image unless i.thumbnail_image.nil?%>
-<em><%= i.subtitle %></em>
-<p><%= i.body %></p>
-<%= image_tag i.main_image if !i.main_image.nil?%>
+  <% @portfolio_items.each do |i| %>
+  <h1><%= i.title %></h1>
+  <%= image_tag i.thumbnail_image unless i.thumbnail_image.nil?%>
+  <em><%= i.subtitle %></em>
+  <p><%= i.body %></p>
+  <%= image_tag i.main_image if !i.main_image.nil?%>
 <% end %>
