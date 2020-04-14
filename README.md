@@ -46,3 +46,11 @@ You will also notice rails did not create CRUD endpoints for these pages.
 3. A migration file with new table
 
 Don't forget to `rails db:migrate` to implement the new changes into the schema file.
+
+### Resource
+`rails g resource Portfolio title:string subtitle:string`
+
+Creates a model and controller but no views
+
+Think of them as _very skinny scaffolds_.
+
