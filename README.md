@@ -13,8 +13,8 @@ Ruby will read the name of the system (in my case `khanr`). If you want somethin
 Create the database user if none already exists: `sudo -u postgres createdb USERNAME`
 
 Create the databse
-`rails db:create`
-`rails db:migrate`
+    `rails db:create`
+    `rails db:migrate`
 
 ### Scaffolding
 `rails g scaffold Blog title:string body:text`
