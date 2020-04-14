@@ -24,8 +24,6 @@ Starting the database server
 `rake routes` To see all routes
 `rake routes | grep NAME` To see specific routes
 
-
-
 ### Scaffolding
 `rails g scaffold Blog title:string body:text`
 `rails db:migrate`
@@ -69,3 +67,13 @@ Think of them as _very skinny scaffolds_.
 `rails db:setup`
 
 The seed file utilizes pure Ruby and some Rails syntax to add fake data to the database.
+
+## FriendlyID Gem
+https://github.com/norman/friendly_id
+
+Adding/Removing or Changing attributes from a database table:
+
+`rails g migration add_slug_to_blogs slug:string:uniq`
+
+1. The `add_` is unique and rails looks for these words
+2. The `_blogs` refers to the schema table
