@@ -24,6 +24,8 @@ Starting the database server
 `rake routes` To see all routes
 `rake routes | grep NAME` To see specific routes
 
+
+
 ### Scaffolding
 `rails g scaffold Blog title:string body:text`
 `rails db:migrate`
