@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### Rails installation string
+`rails new NAMEOFAPP -T --database=postgresql`
 
-* Ruby version
+The `-T` removes the test environment
+`--database` allows you to specify the database that should be used. There are many options however, Postgres is recommended by the instructor.
 
-* System dependencies
+### Database Setup
+Ruby will read the name of the system (in my case `khanr`). If you want something different, specify the `username` and `password` in the `database.yml` file.
 
-* Configuration
+Create the database user if none already exist: `sudo -u postgres createdb USERNAME`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Create the databse
+`rails db:create`
