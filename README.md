@@ -92,3 +92,6 @@ Create a relationship with something like this:
 ## Data Defaults
 
 ## Data Concerns
+
+
+## Devise Gem For Autentication
