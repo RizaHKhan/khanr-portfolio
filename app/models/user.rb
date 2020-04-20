@@ -3,4 +3,15 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  validates_presence_of :name
+
+  # These values are not saved to the database. They are extracted from values submitted to the database.
+  def first_name
+    self.name.split.first
+  end
+
+  def last_name
+    self.name.split.last
+  end
 end

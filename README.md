@@ -1,5 +1,5 @@
 # README
-
+Take small manageable steps.
 
 ### Rails installation string
 `rails new NAMEOFAPP -T --database=postgresql`
@@ -98,3 +98,6 @@ Create a relationship with something like this:
 
 ## The Single Responsibility Rule
 A class should have a single responsibility.
+
+## Virtual Attributes
+Virtual attributes are values held in memory and not persisted to the database. But these attributes are based on user inputs.
