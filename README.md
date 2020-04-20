@@ -95,3 +95,6 @@ Create a relationship with something like this:
 
 
 ## Devise Gem For Autentication
+
+## The Single Responsibility Rule
+A class should have a single responsibility.
