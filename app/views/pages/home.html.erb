@@ -1,4 +1,4 @@
-<h1>Hi, <%= current_user.first_name if current_user%></h1>
+<h1>Hi, <%= current_user.first_name %></h1>
 <h1>Welcome to the Homepage</h1>
 
 <%# From the controller, we specied a instance variable @posts, which we can use in the view to show to the end user. %>
@@ -7,3 +7,5 @@
 
 <h3>Skills</h3>
 <%= @skills.inspect %>
+
+<p><%= current_user.class %></p>
