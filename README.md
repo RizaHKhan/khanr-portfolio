@@ -1,5 +1,6 @@
 # README
 Take small manageable steps.
+**If you understand how dataflow works, you understand Rails applications**
 
 ### Rails installation string
 `rails new NAMEOFAPP -T --database=postgresql`
@@ -101,3 +102,6 @@ A class should have a single responsibility.
 
 ## Virtual Attributes
 Virtual attributes are values held in memory and not persisted to the database. But these attributes are based on user inputs.
+
+## Sessions
+!Important, sessions are not secure and no important data should be stored in them
