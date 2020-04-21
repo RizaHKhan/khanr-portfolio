@@ -35,6 +35,7 @@ class PortfoliosController < ApplicationController
   # The edit method simply provides the app with the parameter that determines WHICH item will be updated. The actual updating is done by the update method.
   def edit
     @portfolio_item = Portfolio.find(params[:id])
+    3.times { @portfolio_item.technologies.build }
   end
 
   def update
