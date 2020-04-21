@@ -121,3 +121,7 @@ Virtual attributes are values held in memory and not persisted to the database. 
 ## Null Object Pattern
 
 Mock a user if a real person has no logged in.
+
+## Partials vs View Helpers
+
+If there is lots of Ruby code, use a view helper. Otherwise, use a partial with there is lots of HTML code.
