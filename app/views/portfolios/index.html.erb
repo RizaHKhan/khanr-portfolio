@@ -14,13 +14,4 @@
   <%# url option allows us to add subdomains %>
   <p><%= new_portfolio_url  %></p>
 
-  <% @portfolio_items.each do |i| %>
-  <h1><%= link_to i.title, portfolio_show_path(i) %></h1>
-  <%= image_tag i.thumbnail_image unless i.thumbnail_image.nil?%>
-  <em><%= i.subtitle %></em>
-  <p><%= i.body %></p>
-  <%= image_tag i.main_image if !i.main_image.nil?%>
-  <%# You can just add i instead of i.id because rails will automatically use the id parameter %>
-  <%= link_to 'Edit', edit_portfolio_path(i) %>
-  <%= link_to 'Delete Portfolio Item', portfolio_path(i), method: :delete, data: {confirm: 'Are you sure?'}  %>
-<% end %>
+  <%= render partial: 'portfolio_item', collection: @portfolio_items %>

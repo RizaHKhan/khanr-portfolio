@@ -2,6 +2,7 @@
 
 Take small manageable steps.
 **If you understand how dataflow works, you understand Rails applications**
+**Convention over configuration**
 
 ### Rails installation string
 
