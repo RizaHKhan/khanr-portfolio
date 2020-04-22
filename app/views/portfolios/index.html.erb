@@ -1,17 +1,4 @@
 <h1>Portfolio Archive</h1>
 
-  <%# One way to link to create new page %>
-  <%# <a href="/portfolios/new">Create New Item</a> %>
-
-  <%# Second way of path to new page %>
-  <%= link_to "Create New item", new_portfolio_path %>
-
-  <%#
-    You have the ability to either pick _path or _url to add to the prefix.
-  %>
-
-  <p><%= new_portfolio_path  %></p>
-  <%# url option allows us to add subdomains %>
-  <p><%= new_portfolio_url  %></p>
-
-  <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+<%= link_to "Create New item", new_portfolio_path if logged_in?(:site_admin) %>
+<%= render partial: 'portfolio_item', collection: @portfolio_items %>
