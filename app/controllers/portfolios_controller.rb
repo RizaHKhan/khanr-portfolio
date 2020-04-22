@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
   layout 'portfolio'
 
   def index
@@ -16,7 +17,7 @@ class PortfoliosController < ApplicationController
   end
 
   def show
-    @portfolio_item = Portfolio.find(params[:id])
+    binding.pry
   end
 
   def create
@@ -34,13 +35,10 @@ class PortfoliosController < ApplicationController
 
   # The edit method simply provides the app with the parameter that determines WHICH item will be updated. The actual updating is done by the update method.
   def edit
-    @portfolio_item = Portfolio.find(params[:id])
     3.times { @portfolio_item.technologies.build }
   end
 
   def update
-    @portfolio_item = Portfolio.find(params[:id])
-
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
         # Redirection is not a variable, but a specific string in the router (so don't add an @ in the beginning)
@@ -54,9 +52,6 @@ class PortfoliosController < ApplicationController
   # There is a reason for destory vs delete. The destroy method calls callbacks. It is more specific and thorough
   # Does not require its own view template
   def destroy
-
-    @portfolio_item = Portfolio.find(params[:id])
-
     @portfolio_item.destroy
     respond_to do |format|
       format.html { redirect_to portfolios_url, notice: 'Blog was successfully destroyed.' }
@@ -71,5 +66,9 @@ class PortfoliosController < ApplicationController
                                                :body,
                                                technologies_attributes: [:name]
                                               )
+    end
+
+    def set_portfolio_item
+      @portfolio_item = Portfolio.find(params[:id])
     end
 end
