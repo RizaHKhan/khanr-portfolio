@@ -49,3 +49,5 @@ gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.
 gem 'acts-as-taggable-on', '~> 6.0'
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0'
+
+gem 'khanr_tool', git: 'https://github.com/RizaHKhan/khanr_tool'

@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/RizaHKhan/khanr_tool
+  revision: 3ffbbcdd0767e12fd406b52bc18c0309cc1f66fd
+  specs:
+    khanr_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -221,6 +227,7 @@ DEPENDENCIES
   devise
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.7)
+  khanr_tool!
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   pry-byebug
