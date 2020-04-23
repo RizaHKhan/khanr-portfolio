@@ -52,3 +52,4 @@ gem 'bootstrap', '~> 4.0.0'
 
 gem 'khanr_tool', git: 'https://github.com/RizaHKhan/khanr_tool'
 gem 'petergate'
+gem 'htmlbeautifier'
