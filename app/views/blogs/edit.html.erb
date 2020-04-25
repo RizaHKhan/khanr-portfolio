@@ -1,6 +1,15 @@
-<h1>Editing Blog</h1>
-
-<%= render 'form', blog: @blog %>
-
-<%= link_to 'Show', @blog %> |
-<%= link_to 'Back', blogs_path %>
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h1>Editing Blog</h1>
+      <%= link_to 'Show', @blog %> |
+      <%= link_to 'Back', blogs_path %>
+      <%= render 'form', blog: @blog %>
+      <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+      </nav>
+    </div>
+    <%= render 'shared/blog_sidebar' %>
+  </div>
+</main>
