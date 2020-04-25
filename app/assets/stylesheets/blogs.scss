@@ -1,4 +1,5 @@
 @import 'bootstrap';
+@import "font-awesome";
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -154,4 +155,10 @@ h6 {
 
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+// Costm styles
+
+.social-links a {
+  font-size: 1.5rem;
 }
