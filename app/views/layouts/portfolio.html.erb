@@ -7,6 +7,7 @@
     <%= csrf_meta_tags %>
     <meta name="keywords" content="<%= @seo_keywords %>"/>
     <%= stylesheet_link_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
@@ -20,6 +21,6 @@
       <p>Thanks for visiting me from <%= session[:source] %></p>
     <% end %>
     <%= source_helper("portfolio") %>
-    <%= javascript_pack_tag 'navbar', 'data-turbolinks-track': 'reload' %>
+    <%# <%= javascript_pack_tag 'navbar', 'data-turbolinks-track': 'reload' %> %>
   </body>
 </html>
