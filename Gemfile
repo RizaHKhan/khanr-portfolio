@@ -48,10 +48,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 gem 'acts-as-taggable-on', '~> 6.0'
 gem 'devise'
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.4.1'
 
 gem 'khanr_tool', git: 'https://github.com/RizaHKhan/khanr_tool'
 gem 'petergate'
 gem 'htmlbeautifier'
 gem "font-awesome-rails"
 gem 'kaminari', '~> 1.2'
+gem 'jquery-rails'
+gem 'sprockets-rails', '~> 3.2'
