@@ -3,14 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const sortableItem = document.querySelector(".sortable");
   const card = document.querySelectorAll(".portfolio-item");
 
-  card.forEach((e) => {
-    e.addEventListener("drop", () => {
-      set_position(true);
+  if (sortableItem) {
+    card.forEach((e) => {
+      e.addEventListener("drop", () => {
+        set_position(true);
+      });
     });
-  });
 
-  set_position();
-  Sortable.create(sortableItem);
+    set_position();
+    Sortable.create(sortableItem);
+  }
 });
 
 function getCookie() {
@@ -31,7 +33,6 @@ function set_position(boolean) {
         pos: e.getAttribute("data-pos"),
       });
     }
-
     x++;
   });
 
