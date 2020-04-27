@@ -22,8 +22,8 @@ module ApplicationHelper
   def nav_items
     [
       { url: root_path, title: 'Home' },
-      { url: contact_path, title: 'About' },
-      { url: about_path, title: 'Contact' },
+      { url: contact_path, title: 'Contact' },
+      { url: about_path, title: 'About' },
       { url: blogs_path, title: 'Blog' },
       { url: portfolios_path, title: 'Portfolio' }
     ]
