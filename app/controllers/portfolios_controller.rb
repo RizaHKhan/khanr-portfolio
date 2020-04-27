@@ -7,6 +7,14 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.by_position
   end
 
+  def sort
+    params[:_json].each do |value|
+      Portfolio.find(value[:id]).update(position: value[:pos])
+    end
+
+    render nothing: true
+  end
+
   def vue
     @vue_items = Portfolio.vue
   end
