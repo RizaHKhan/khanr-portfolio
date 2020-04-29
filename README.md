@@ -79,6 +79,8 @@ Think of them as _very skinny scaffolds_.
 ## Seed File
 
 **Only run this in development**. It ereases the database.
+Before running the following command, go to the `seed.rb` file and change the **email** and **password** to your preference.
+
 `rails db:setup`
 
 The seed file utilizes pure Ruby and some Rails syntax to add fake data to the database.

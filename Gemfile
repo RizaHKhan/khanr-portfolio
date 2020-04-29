@@ -53,3 +53,7 @@ gem 'petergate'
 gem 'htmlbeautifier'
 gem "font-awesome-rails"
 gem 'kaminari', '~> 1.2'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
+gem 'carrierwave', '~> 2.1'
+gem 'mini_magick', '~> 4.10', '>= 4.10.1'
+gem 'carrierwave-aws', '~> 1.5'

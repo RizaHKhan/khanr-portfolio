@@ -50,10 +50,21 @@ end
 puts '1 Portfolio Items Created'
 
 
-3. times do |technology|
+3.times do |technology|
   Portfolio.last.technologies.create!(
     name: "Technolog #{ technology + 1 }"
   )
 end
 
 puts '3 Portfolio Items Created'
+
+1.times do |user|
+  User.create!(
+    email: 'khanriza@gmail.com',
+    password: 'qwerty',
+    name: 'khanr',
+    roles: 'site_admin'
+  )
+end
+
+puts '1 User Created with Site Admin Role'

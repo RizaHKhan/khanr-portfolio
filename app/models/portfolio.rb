@@ -7,6 +7,9 @@ class Portfolio < ApplicationRecord
   includes Placeholder
   validates_presence_of :title, :body, :main_image, :thumbnail_image
 
+  mount_uploader :thumbnail_image, PortfolioUploader
+  mount_uploader :main_image, PortfolioUploader
+
   # Self is a keyword here, Method 1
   def self.vue
     where(subtitle: 'VueJS')
