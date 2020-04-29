@@ -1,6 +1,6 @@
 <div class="col-md-4 portfolio-item" data-id="<%= portfolio_item.id %>">
   <div class="card mb-4 box-shadow">
-    <%= image_tag portfolio_item.thumbnail_image.url unless portfolio_item.thumbnail_image.nil? %>
+    <%= image_tag portfolio_img (portfolio_item.thumbnail_image.url), 'thumbnail' %>
     <div class="card-body">
       <h1><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></h1>
       <p class="card-text"><em><%= portfolio_item.subtitle %></em></p>
