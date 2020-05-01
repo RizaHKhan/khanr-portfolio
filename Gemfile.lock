@@ -114,6 +114,8 @@ GEM
       railties (>= 3.2, < 6.1)
     erubi (1.9.0)
     ffi (1.12.2)
+    flash_rails_messages (2.1.0)
+      rails (>= 4.2)
     font-awesome-rails (4.7.0.5)
       railties (>= 3.2, < 6.1)
     friendly_id (5.2.5)
@@ -273,6 +275,7 @@ DEPENDENCIES
   cocoon (~> 1.2, >= 1.2.14)
   devise
   dotenv-rails (~> 2.1, >= 2.1.1)
+  flash_rails_messages
   font-awesome-rails
   friendly_id (~> 5.2.4)
   htmlbeautifier
