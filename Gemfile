@@ -61,3 +61,5 @@ gem 'cocoon', '~> 1.2', '>= 1.2.14'
 gem 'flash_rails_messages'
 gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+
+ruby "2.7.0"

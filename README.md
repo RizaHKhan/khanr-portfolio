@@ -128,3 +128,11 @@ Mock a user if a real person has no logged in.
 ## Partials vs View Helpers
 
 If there is lots of Ruby code, use a view helper. Otherwise, use a partial with there is lots of HTML code.
+
+## Heroku Deployment
+1.
+To set **config vars** from the terminal:
+`heroku config:set KEY=VALUE`
+The key/value pairs can be found if your .env file.
+
+2.
