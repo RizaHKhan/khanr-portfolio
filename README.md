@@ -130,9 +130,23 @@ Mock a user if a real person has no logged in.
 If there is lots of Ruby code, use a view helper. Otherwise, use a partial with there is lots of HTML code.
 
 ## Heroku Deployment
-1.
+1. Login to Heroku
+`heroku login`
+
+2.
 To set **config vars** from the terminal:
 `heroku config:set KEY=VALUE`
 The key/value pairs can be found if your .env file.
 
-2.
+3.
+Then you can push to heroku
+`git push heroku master`
+
+4.
+Push database up to Heroku
+`heroku run rake db:migrate`
+
+
+Misc:
+To access heroku console locally: `heroku run rails c`
+To get logs from heroku locally: `heroku logs -n 250`
