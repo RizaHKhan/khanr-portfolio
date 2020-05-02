@@ -5,6 +5,23 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "tiger.jpg", alt: 'Profile Image', width: '100%' %>
+        <div class="skills">
+          <% @skills.each do |s| %>
+            <div class="container mt-3 p-0">
+              <h4><%= s.title %></h4>
+              <div class="progress">
+                <div
+                class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                aria-valuenow="<%= s.percent_utilized %>"
+                aria-valuemax="100"
+                style="width: <%= s.percent_utilized %>%"
+                >
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
       <div class="col-md-8">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quos cum enim asperiores. Velit vitae nulla delectus sed laborum provident quas autem ad doloribus mollitia. Distinctio, officia optio, ipsam quaerat tempora quas saepe quibusdam accusamus aliquam magnam aperiam atque. Soluta.</p>
