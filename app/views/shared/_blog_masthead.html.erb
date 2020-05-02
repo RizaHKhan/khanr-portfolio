@@ -12,7 +12,8 @@
       </a>
       <%= login_helper 'btn btn-sm btn-outline-secondary ml-1' %>
       <% if logged_in?(:site_admin) %>
-        <a href="<%= new_blog_path %>" class="btn btn-sm btn-outline-secondary ml-1">New Blog</a>
+        <%= link_to 'New Blog', new_blog_path, class: 'btn btn-sm btn-outline-secondary m1-1' %>
+        <%= link_to 'Topics', topics_path, class: 'btn btn-sm btn-outline-secondary m1-1' %>
       <% end %>
     </div>
   </div>
