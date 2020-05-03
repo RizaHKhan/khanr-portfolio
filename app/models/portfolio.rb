@@ -8,6 +8,8 @@ class Portfolio < ApplicationRecord
 
   mount_uploader :thumbnail_image, PortfolioUploader
   mount_uploader :main_image, PortfolioUploader
+  mount_uploader :second_image, PortfolioUploader
+  mount_uploader :third_image, PortfolioUploader
 
   # Self is a keyword here, Method 1
   def self.vue
