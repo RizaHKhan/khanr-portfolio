@@ -15,14 +15,12 @@
     <div class="container">
       <%= render 'shared/blog_masthead' %>
     </div>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= render_flash_messages %>
     <%= yield %>
     <% if session[:source] %>
       <p>Thanks for visiting me from <%= session[:source] %></p>
     <% end %>
     <%= render 'shared/blog_footer' %>
-    <%= render_flash_messages %>
   </div>
 </body>
 </html>

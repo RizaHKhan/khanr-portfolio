@@ -22,9 +22,11 @@
         poster: 'typing.png'
       ) %>
       <%= render "shared/application_nav"%>
+      <div class="m-auto">
+        <%= render_flash_messages %>
+      </div>
       <%= yield %>
       <%= render "shared/application_footer"%>
-      <%= render_flash_messages %>
     </div>
   </body>
 </html>
