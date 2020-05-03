@@ -16,6 +16,7 @@
       <%= render 'shared/blog_masthead' %>
     </div>
     <%= render_flash_messages %>
+    <%= render 'featured' %>
     <%= yield %>
     <% if session[:source] %>
       <p>Thanks for visiting me from <%= session[:source] %></p>

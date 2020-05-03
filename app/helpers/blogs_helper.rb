@@ -25,4 +25,8 @@ module BlogsHelper
       'color: red;'
     end
   end
+
+  def featured
+    @featured = Blog.find_by_featured(true)
+  end
 end
