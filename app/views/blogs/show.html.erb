@@ -4,7 +4,7 @@
       <h2><%= @blog.title %></h2>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <%= link_to 'Home', root_path, class: 'breadcrumb-item' %>
+          <%= link_to 'Blogs', blogs_path, class: 'breadcrumb-item' %>
           <%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item' %>
           <li class="breadcrumb-item active" aria-current="page"><%= @blog.title %></li>
           <div class="ml-auto fa-icons">

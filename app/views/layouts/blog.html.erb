@@ -16,7 +16,9 @@
       <%= render 'shared/blog_masthead' %>
     </div>
     <%= render_flash_messages %>
-    <%= render 'featured' %>
+    <% if featured && current_page?(blogs_path)%>
+      <%= render 'featured' %>
+    <% end %>
     <%= yield %>
     <% if session[:source] %>
       <p>Thanks for visiting me from <%= session[:source] %></p>
