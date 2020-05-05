@@ -1,0 +1,16 @@
+
+Blogs
+  GET /blogs
+[32m    renders the index template[0m
+
+Pages
+  GET home
+[32m    renders the home page[0m
+  GET about
+[32m    renders about page[0m
+  GET contact
+[32m    renders contact page[0m
+
+Finished in 0.78296 seconds (files took 2.02 seconds to load)
+[32m4 examples, 0 failures[0m
+

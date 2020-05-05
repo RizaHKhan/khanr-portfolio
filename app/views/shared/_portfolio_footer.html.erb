@@ -1,9 +1,18 @@
 <footer class="text-muted">
   <div class="container">
-    <%= copyright_generator %>
-    <p class="float-right">
-      <a href="#" class="btn btn-secondary">Back to top</a>
-      <%= link_to 'Back To Portfolios List', portfolios_path, class: 'btn btn-secondary' %>
+    <div class="row">
+      <div class="col-md my-auto">
+        <%= copyright_generator %>
+      </div>
+      <div class="col-md my-auto">
+        <p class="float-right">
+          <a href="#" class="btn btn-secondary mt-1">Back to top</a>
+          <%= link_to 'Back To Portfolios List', portfolios_path, class: 'btn btn-secondary mt-1' %>
+          <% if logged_in?(:site_admin) %>
+            <%= link_to 'Create New Portfolio', new_portfolio_path, class: 'btn btn-primary mt-1' %>
+          <% end %>
+        </div>
+      </div>
     </p>
   </div>
 </footer>
