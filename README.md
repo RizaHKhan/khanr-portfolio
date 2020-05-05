@@ -150,3 +150,18 @@ Push database up to Heroku
 Misc:
 To access heroku console locally: `heroku run rails c`
 To get logs from heroku locally: `heroku logs -n 250`
+
+## RSpec Testing
+
+### Setting up the development environment
+1. Rails comes default with unit-test (sp?). You can override that using:
+`rails new project-name -T`
+
+2. Add the Rspec gem to the Gem file under the `development` group
+
+3. Create a boilerplate RSpec folders:
+`rails generate rspec:install`
+
+### Adding folders/files for testing purposes
+1. Add a model folder like so:
+`rails g rspec:model user`
